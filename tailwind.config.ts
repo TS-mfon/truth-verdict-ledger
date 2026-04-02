@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
+        serif: ["Playfair Display", "serif"],
+        mono: ["JetBrains Mono", "monospace"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +52,22 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          dim: "hsl(var(--gold-dim))",
+        },
+        verdict: {
+          true: "hsl(var(--verdict-true))",
+          "true-bg": "hsl(var(--verdict-true-bg))",
+          "mostly-true": "hsl(var(--verdict-mostly-true))",
+          "mostly-true-bg": "hsl(var(--verdict-mostly-true-bg))",
+          mixed: "hsl(var(--verdict-mixed))",
+          "mixed-bg": "hsl(var(--verdict-mixed-bg))",
+          "mostly-false": "hsl(var(--verdict-mostly-false))",
+          "mostly-false-bg": "hsl(var(--verdict-mostly-false-bg))",
+          false: "hsl(var(--verdict-false))",
+          "false-bg": "hsl(var(--verdict-false-bg))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,20 +86,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
