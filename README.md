@@ -1,11 +1,4 @@
-i want you to build this genlayer project for me Grant Allocator DAO
 
-
-clone this genlayer boilerplate template https://github.com/genlayerlabs/genlayer-project-boilerplate.git to the folder.
-understand the structure and how a genlayer project works
-we will be creating the project on top of this boilerplate
-
-i want to create this dapp to
 
 A shared grant pool where anyone can submit a funding request for a project. The AI evaluates each application against the pool's stated mission (stored onchain), scores it on impact/feasibility/alignment, and recommends a funding amount. Human DAO members vote with the AI recommendation visible. Applications that score below a threshold are filtered out before humans even see them. Reduces governance fatigue dramatically — only quality proposals reach the vote.
 
